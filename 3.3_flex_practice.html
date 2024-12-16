@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 800px;
+        padding: 24px;
+      }
+
+      .flex-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+      }
+
+      .top-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .bottom-container {
+        display: flex;
+        gap: 12px;
+        height: 200px;
+      }
+
+      .left-flex-container {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        flex: 1;
+      }
+
+      .yellow {
+        background-color: yellow;
+        width: 64px;
+        height: 64px;
+      }
+
+      .red {
+        background-color: red;
+
+        flex: 1;
+      }
+
+      .blue {
+        background-color: blue;
+
+        flex: 1;
+      }
+
+      .green {
+        background-color: green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top-container">
+      <h1>Header</h1>
+      <div class="yellow"></div>
+    </div>
+    <div class="bottom-container">
+      <div class="left-flex-container">
+        <div class="red"></div>
+        <div class="blue"></div>
+      </div>
+      <div class="green">
+        <h1>가운데 정렬 되어있습니다.</h1>
+      </div>
+    </div>
+  </body>
+</html>
